@@ -169,10 +169,13 @@ class Hagstofan:
         """
         Fetch the "updated" date for a specific table.
         """
+        # Bæta við .px ef vantar
+        table_with_px = table if table.endswith('.px') else f"{table}.px"
+
         # finna töflu urlið úr config
         px_url = None
         for db, tables in self.config.items():
-            px_url = tables.get(table, {}).get('url', None)
+            px_url = tables.get(table_with_px, {}).get('url', None)
             if px_url:
                 break
 
