@@ -1,5 +1,3 @@
-# hagstofan
-API Wrapper for Statistics Iceland
 # Hagstofan
 
 ## Description
