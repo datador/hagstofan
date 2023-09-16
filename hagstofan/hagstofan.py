@@ -195,7 +195,7 @@ class Hagstofan:
                 
                 # Filtera á "updated" gildið fyrir þá töflu
                 for item in data_json:
-                    if item.get("id") == table:
+                    if item.get("id") == table_with_px:
                         return item.get("updated", "")
             
             except Exception as e:
