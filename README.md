@@ -14,15 +14,12 @@ API wrapper fyrir hagstofu vefþjónustuna
 Installa frá github repository:
 
 ```bash
-pip install https://github.com/datador/hagstofan.git
+pip install hagstofan
+```
+```bash
+pip install git+https://github.com/datador/hagstofan.git
 ```
 
-Einnig hægt að ná í kóðan með að clone'a repoið:
-```bash
-git clone https://github.com/datador/hagstofan.git
-cd hagstofan
-pip install .
-```
 
 ## Usage
 
@@ -54,7 +51,7 @@ hagstofan.get_update('VIS01000.px')
 
 ```python
 # Náum í gögnin
-df = hagstofan.get_data(id='VIS01000.px', dbid='Efnahagur')
+df = hagstofan.get_data(table='VIS01000.px')
 df
 ```
 
